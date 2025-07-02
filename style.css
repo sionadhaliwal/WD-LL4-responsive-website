@@ -1,0 +1,208 @@
+/* Prompt 1: Header and Navigation */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0fdf4;
+    color: #1a3c34;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: #e6f4ea;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #1a3c34;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #3b9975;
+  }
+  
+  /* Prompt 3: Hero Section */
+.hero {
+    background-color: #d6f5f2;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a3c34;
+  }
+  
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #1a3c34;
+  }
+  
+  /* Prompt 4: About Section */
+.about {
+    background-color: #f0fdf4;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #1a3c34;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    color: #1a3c34;
+  }
+  
+  /* Prompt 5: Call-to-Action Section */
+.cta {
+    background-color: #e6f4ea;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #1a3c34;
+    margin-bottom: 1rem;
+  }
+  
+  .cta p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #1a3c34;
+  }
+  
+  .cta-button {
+    background-color: #3b9975;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #317f61;
+  }
+
+  /* Prompt 6: Responsive Design */
+@media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p,
+    .about p,
+    .cta p {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  
+    .cta h2,
+    .about h2 {
+      font-size: 1.5rem;
+    }
+  
+    .cta-button {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+/* For images added */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  /* Prompt 7: Interactivity & Final Polish */
+
+/* Smooth transitions for links and buttons */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for header navigation */
+.nav-links a:hover {
+  color: #3b9975;
+  text-decoration: underline;
+}
+
+/* Button hover already added earlier; here’s a smooth scale effect too */
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Optional: Subtle scale effect on logo */
+.logo:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Font size polish */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Extra spacing polish */
+section {
+  margin-bottom: 2rem;
+}
